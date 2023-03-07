@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
+import Links from '@components/Links'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -11,9 +12,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Welcome to The Corporate Coach [DEV][DEMO]!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+            <Links section={"Development"} domain={"dev.mbodev.me"} />
+            <br/><br/>
+            <Links section={"Local"} domain={"clients-local.mbodev.me"} />
         </p>
       </main>
 
